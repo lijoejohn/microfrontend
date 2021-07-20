@@ -3,9 +3,9 @@ name: deploy-auth
 on:
   push:
     branches:
-      - master
+      - main
     paths:
-      - 'packages/auth/**'
+      - "packages/auth/**"
 
 defaults:
   run:
@@ -13,7 +13,7 @@ defaults:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
       - uses: actions/checkout@v2
